@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/favicon2.png" type="image/png">
+</head>
+
+<body>
+    <div class='file-input'>
+        <input type='file' accept="image/jpeg,image/png">
+        <span class='button'>Choose</span>
+        <span class='label' data-js-label>No file selected</label></span>
+    </div>
+    <div class="meta">
+        <div class="slider-wrapper">
+            <label>Width</label>
+            <input id="range-slider" class="fluid-slider" type="range" value="500" min="0" max="1000">
+            <span id="range-label" class="range-label"></span>
+        </div>
+        <div class="slider-wrapper">
+            <label>Height</label>
+            <input id="range-slider2" class="fluid-slider" type="range" value="500" min="0" max="1000">
+            <span id="range-label2" class="range-label"></span>
+        </div>
+    </div>
+    <div class="actions">
+        <a class='a_button hide' id="resize" onclick="runResize()">Resize</a>
+        <img id="preview" />
+        <a class="a_button hide" id="download">Download</a>
+    </div>
+    <footer>
+        <a target="_bank" id="twitter_tgt">
+            <img src="/img/twitter.png"></a>
+        <p>&copy; Belvue <%= new Date().getFullYear(); %> - All Rights Reserved.</p>
+        <a target="_blank" href="https://github.com/Belvue/Rzr"><img src="/img/github.png"></a>
+    </footer>
+</body>
+<script src="/js/index.js"></script>
+
+</html>
