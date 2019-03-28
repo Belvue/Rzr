@@ -1,2 +1,2 @@
 # Rzr
-Pure Client Image Resizer
+Pure Javascript Image Resizer
