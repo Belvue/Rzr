@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.set('port', '8080');
-app.set('ip', 'localhost');
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
@@ -32,6 +31,6 @@ app.post('/resize', (req, res) => {
     });
 });
 
-app.listen(app.get("port"), app.get("ip"), () => {
-    console.log(`Listening on ${app.get("ip")}:${app.get("port")}`);
+app.listen(app.get("port"), () => {
+    console.log(`Listening on ${app.get("port")}`);
 });
